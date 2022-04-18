@@ -1,7 +1,7 @@
 -- #1
 UPDATE customer
 SET fax = NULL
-WHERE fax != '';
+WHERE fax IS NOT NULL;
 
 -- #2
 UPDATE customer
